@@ -1,0 +1,8 @@
+---
+ - name: sample play
+   hosts: webservers
+   tasks:
+        - name: apache to be installed
+          apt:
+            name: apache2
+            state: present
